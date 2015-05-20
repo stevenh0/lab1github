@@ -29,8 +29,8 @@ import java.util.Date;
 
 public class StockWatcher implements EntryPoint {
 
-      private static final int REFRESH_INTERVAL = 5000;
-	private VerticalPanel mainPanel = new VerticalPanel();
+  private static final int REFRESH_INTERVAL = 5000;
+  private VerticalPanel mainPanel = new VerticalPanel();
   private FlexTable stocksFlexTable = new FlexTable();
   private HorizontalPanel addPanel = new HorizontalPanel();
   private TextBox newSymbolTextBox = new TextBox();
@@ -48,6 +48,9 @@ public class StockWatcher implements EntryPoint {
       /**
        * Entry point method.
    */
+  
+  private String conflict =  "A change";
+  
   public void onModuleLoad() {
 	  LoginServiceAsync loginService = GWT.create(LoginService.class);
 	    loginService.login(GWT.getHostPageBaseURL(), new AsyncCallback<LoginInfo>() {
