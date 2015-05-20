@@ -50,7 +50,13 @@ public class StockWatcher implements EntryPoint {
    */
   
   private String conflict =  "A change";
-  
+  alwer;lwaekr;lkawesfasf
+  ae
+  ra
+  weraw
+  er
+  awer
+  awe
   public void onModuleLoad() {
 	  LoginServiceAsync loginService = GWT.create(LoginService.class);
 	    loginService.login(GWT.getHostPageBaseURL(), new AsyncCallback<LoginInfo>() {
